@@ -24,7 +24,6 @@ var next_center = Vector3(0, 0, 0)
 func _simulation_step(delta):
 	var half_size = Vector3(max_distance, max_distance, max_distance)
 	var octree = preload("OctreeNode.gd").new(AABB(next_center - half_size, half_size + half_size))
-	octree.root = true
 	max_distance = 0
 	
 	
@@ -35,7 +34,7 @@ func _simulation_step(delta):
 	
 	for child in get_children():
 		var force = _calculate_force(child, octree)
-		child.velocity += force / child.mass * delta
+		child.velocity += force / child.mass * delta * time_multiplier
 		child.translation += child.velocity * delta * time_multiplier
 		
 		var distance_to_center = child.translation - octree.center_of_mass
