@@ -1,6 +1,7 @@
 = Godot N-body simulation
 
 A Godot-Plugin for simulating gravitational attraction between bodies in 3D-Space.
+Any class that inherits from Spatial can be added to the simulation.
 
 
 == Usage
