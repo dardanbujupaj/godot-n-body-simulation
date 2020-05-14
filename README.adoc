@@ -1,4 +1,22 @@
 = Godot N-body simulation
 
+A Godot-Plugin for simulating gravitational attraction between bodies in 3D-Space.
+
 
 == Usage
+1. Add NBodySimulation3D-node to your scene.
+2. Add all Elements that should attract each other as children of the simulation node.
+** every node that should be affected needs the properties `mass: float` and `velocity`,
+so make sure to add those to their scripts.
+3. Modify the parameters of the NBodySimulation3D to fit your case.
+* G: The gravity constant. This determines how much the planets attract each other
+* Time Multiplier: Slows or speeds up the simulation time.
+* Theta: Threshold for the octant-size / distance ratio.
+The higher the value the simulation can be calculated but the less accurate it gets.
+See http://arborjs.org/docs/barnes-hut[The Barnes-Hut Algorithm] for reference.
+4. Start the scene and the simulation will automatically compute die forces and move the bodies.
+
+
+NOTE: If you use RigidBody-nodes inside the N-body simulation,
+make sure to set `physics/3d/default_gravity` to 0 in your project settings.
+Otherwise the bodies will still be affected by the linear gravity of the world.

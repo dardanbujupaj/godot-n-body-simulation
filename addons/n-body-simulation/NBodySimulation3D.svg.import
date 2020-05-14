@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/NBodySimulation.svg-d168462bc4a8f50552c42cf2a1b25d0a.stex"
+path="res://.import/NBodySimulation3D.svg-cd528ee72a638a14fee0abca1af8b3b6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/n-body-simulation/NBodySimulation.svg"
-dest_files=[ "res://.import/NBodySimulation.svg-d168462bc4a8f50552c42cf2a1b25d0a.stex" ]
+source_file="res://addons/n-body-simulation/NBodySimulation3D.svg"
+dest_files=[ "res://.import/NBodySimulation3D.svg-cd528ee72a638a14fee0abca1af8b3b6.stex" ]
 
 [params]
 
