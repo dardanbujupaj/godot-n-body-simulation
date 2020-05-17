@@ -1,0 +1,14 @@
+= Changelog
+
+== 0.1.3
+* Add .gitattributes-file so that files outside addons/ won't be imported when plugin is installed through Godot Asset Library
+
+== 0.1.2
+* Add better description in README
+
+== 0.1.1
+* Add icon for plugin
+* Modify class icon
+
+== 0.1.0
+* Initial release

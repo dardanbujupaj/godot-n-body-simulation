@@ -1,0 +1,7 @@
+# Exclude toplevel files to simplify import
+/.gitattributes export-ignore
+/.gitignore     export-ignore
+/LICENSE        export-ignore
+/README.adoc    export-ignore
+/CHANGELOG.adoc export-ignore
+/project.godot  export-ignore
